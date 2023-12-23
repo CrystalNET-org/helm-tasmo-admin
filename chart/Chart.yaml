@@ -1,0 +1,13 @@
+apiVersion: v2
+name: tasmo-admin
+description: A Helm chart for TasmoAdmin - creates second ingress for http OTA server
+type: application
+version: 3.0.8
+appVersion: "v3.2.0"
+icon: https://tasmota.github.io/docs/_media/logo.svg
+home: https://github.com/TasmoAdmin/TasmoAdmin
+sources:
+  - https://github.com/TasmoAdmin/TasmoAdmin
+  - https://github.com/psych0d0g/helm-charts/tree/main/charts/tasmo-admin
+maintainers:
+  - name: psych0d0g

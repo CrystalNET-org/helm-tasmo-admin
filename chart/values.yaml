@@ -1,0 +1,105 @@
+replicaCount: 1
+
+image:
+  # -- referencing the docker image to use for the deployment
+  repository: ghcr.io/tasmoadmin/tasmoadmin
+  # -- pull policy, if you set tag to latest, this should be set to Always to not end up with stale builds
+  pullPolicy: IfNotPresent
+  # -- Overrides the image tag whose default is the chart appVersion.
+  tag: ""
+
+# -- Reference to one or more secrets to be used when pulling images
+#    (https://kubernetes.io/docs/tasks/configure-pod-container/pull-image-private-registry/)
+imagePullSecrets: []
+# -- String to partially override `common.names.fullname` template (will maintain the release name)
+nameOverride: ""
+# -- String to fully override `common.names.fullname` template
+fullnameOverride: ""
+
+serviceAccount:
+  # -- Specifies whether a service account should be created
+  create: true
+  # -- Annotations to add to the service account
+  annotations: {}
+  # -- The name of the service account to use.
+  #    If not set and create is true, a name is generated using the fullname template
+  name: ""
+
+# -- If needed, set some annotations to the deployed pods
+podAnnotations: {}
+
+podSecurityContext: {}
+  # -- set filesystem group access to the same as runAsGroup
+  # fsGroup: 2000
+
+securityContext: {}
+  # capabilities:
+  #   drop:
+  #   - ALL
+  # readOnlyRootFilesystem: true
+  # runAsNonRoot: true
+  # runAsUser: 1000
+
+service:
+  # -- usually ClusterIP if you have an ingress in place,
+  #    could also be set to LoadBalancer if for example metallb is in place
+  type: ClusterIP
+  port: 80
+
+ingress:
+  # -- Enable creation of an ingress object for the deployment
+  enabled: false
+  # -- uses the default ingress class if not set
+  className: ""
+  # -- add annotations to the ingress object (for example to have certificates managed by cert-manager)
+  annotations:
+    nginx.ingress.kubernetes.io/proxy-body-size: 256m
+    # cert-manager.io/cluster-issuer: "letsencrypt-prod"
+    # kubernetes.io/ingress.class: nginx
+    # kubernetes.io/tls-acme: "true"
+  hosts:
+    # -- Hostname the ingress should react for
+    - host: chart-example.local
+      paths:
+        - path: /
+          pathType: ImplementationSpecific
+  tls: []
+  #  - secretName: chart-example-tls
+  #    hosts:
+  #      - chart-example.local
+
+# -- Limit the pods ressources if needed
+resources: {}
+  # We usually recommend not to specify default resources and to leave this as a conscious
+  # choice for the user. This also increases chances charts run on environments with little
+  # resources, such as Minikube. If you do want to specify resources, uncomment the following
+  # lines, adjust them as necessary, and remove the curly braces after 'resources:'.
+  # limits:
+  #   cpu: 100m
+  #   memory: 128Mi
+  # requests:
+  #   cpu: 100m
+  #   memory: 128Mi
+
+autoscaling:
+  enabled: false
+  minReplicas: 1
+  maxReplicas: 100
+  targetCPUUtilizationPercentage: 80
+  # targetMemoryUtilizationPercentage: 80
+
+nodeSelector: {}
+
+tolerations: []
+
+affinity: {}
+
+persistence:
+  enabled: false
+  size: 20Mi
+  storageClassName: ""
+  accessMode: ReadWriteOnce
+  ## Existing PersistentVolumeClaims
+  ## The value is evaluated as a template
+  ## So, for example, the name can depend on .Release or .Chart
+  # existingClaim: ""
