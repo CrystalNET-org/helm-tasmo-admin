@@ -8,7 +8,9 @@
 
 ### Misc
 
+- Update harbor.crystalnet.org/dockerhub-proxy/renovate/renovate Docker tag to v37.115.0 [[#7](https://github.com/CrystalNET-org/helm-tasmo-admin/pull/7)]
 - Update ghcr.io/tasmoadmin/tasmoadmin Docker tag to v3.3.1 [[#5](https://github.com/CrystalNET-org/helm-tasmo-admin/pull/5)]
+- Update harbor.crystalnet.org/dockerhub-proxy/renovate/renovate Docker tag to v37.115.0 [[#7](https://github.com/CrystalNET-org/helm-tasmo-admin/pull/7)]
 - Update ghcr.io/tasmoadmin/tasmoadmin Docker tag to v3.3.1 [[#5](https://github.com/CrystalNET-org/helm-tasmo-admin/pull/5)]
 
 ## [3.0.9](https://github.com/CrystalNET-org/helm-tasmo-admin/releases/tag/3.0.9) - 2023-12-23
