@@ -1,6 +1,6 @@
 # Changelog
 
-## [3.0.11](https://github.com/CrystalNET-org/helm-tasmo-admin/releases/tag/3.0.11) - 2024-01-04
+## [3.0.11](https://github.com/CrystalNET-org/helm-tasmo-admin/releases/tag/3.0.11) - 2024-01-05
 
 ### ❤️ Thanks to all contributors! ❤️
 
@@ -8,6 +8,7 @@
 
 ### Misc
 
+- Update harbor.crystalnet.org/dockerhub-proxy/renovate/renovate Docker tag to v37.122.0 [[#11](https://github.com/CrystalNET-org/helm-tasmo-admin/pull/11)]
 - Update harbor.crystalnet.org/dockerhub-proxy/renovate/renovate Docker tag to v37.121.0 [[#8](https://github.com/CrystalNET-org/helm-tasmo-admin/pull/8)]
 
 ## [3.0.10](https://github.com/CrystalNET-org/helm-tasmo-admin/releases/tag/3.0.10) - 2024-01-02
