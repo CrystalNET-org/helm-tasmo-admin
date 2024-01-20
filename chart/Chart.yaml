@@ -2,7 +2,7 @@ apiVersion: v2
 name: tasmo-admin
 description: A Helm chart for TasmoAdmin - creates second ingress for http-only OTA server
 type: application
-version: 3.0.11
+version: 3.0.12
 # renovate: image=ghcr.io/tasmoadmin/tasmoadmin
 appVersion: "v3.3.3"
 icon: https://tasmota.github.io/docs/_media/logo.svg
