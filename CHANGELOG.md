@@ -1,5 +1,15 @@
 # Changelog
 
+## [3.0.12](https://github.com/CrystalNET-org/helm-tasmo-admin/releases/tag/3.0.12) - 2024-01-20
+
+### ❤️ Thanks to all contributors! ❤️
+
+@Lukas Wingerberg
+
+### Misc
+
+- Create .gitattributes ([6fc0183](https://github.com/CrystalNET-org/helm-tasmo-admin/commit/6fc0183eef7036bb2d14d5f007dc1e7d6b7c393a))
+
 ## [3.0.11](https://github.com/CrystalNET-org/helm-tasmo-admin/releases/tag/3.0.11) - 2024-01-05
 
 ### ❤️ Thanks to all contributors! ❤️
