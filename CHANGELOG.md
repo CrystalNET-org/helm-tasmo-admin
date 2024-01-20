@@ -4,10 +4,12 @@
 
 ### ❤️ Thanks to all contributors! ❤️
 
-@Lukas Wingerberg
+@psych0d0g, @Lukas Wingerberg
 
 ### Misc
 
+- Update ghcr.io/tasmoadmin/tasmoadmin Docker tag to v3.3.3 [[#13](https://github.com/CrystalNET-org/helm-tasmo-admin/pull/13)]
+- Update harbor.crystalnet.org/dockerhub-proxy/renovate/renovate Docker tag to v37.140.10 [[#12](https://github.com/CrystalNET-org/helm-tasmo-admin/pull/12)]
 - Update .gitattributes ([266dd82](https://github.com/CrystalNET-org/helm-tasmo-admin/commit/266dd82de4489bbfa3d92f38f390ec1a8bb00a3a))
 - Update .gitattributes ([969b581](https://github.com/CrystalNET-org/helm-tasmo-admin/commit/969b5815e5f3bc7f000dffa3ca3a2d84a8d8a077))
 - Create .gitattributes ([6fc0183](https://github.com/CrystalNET-org/helm-tasmo-admin/commit/6fc0183eef7036bb2d14d5f007dc1e7d6b7c393a))
