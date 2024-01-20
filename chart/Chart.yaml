@@ -4,7 +4,7 @@ description: A Helm chart for TasmoAdmin - creates second ingress for http-only 
 type: application
 version: 3.0.12
 # renovate: image=ghcr.io/tasmoadmin/tasmoadmin
-appVersion: "v3.3.2"
+appVersion: "v3.3.3"
 icon: https://tasmota.github.io/docs/_media/logo.svg
 home: https://github.com/TasmoAdmin/TasmoAdmin
 sources:
