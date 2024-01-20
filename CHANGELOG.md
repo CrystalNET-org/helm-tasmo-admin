@@ -8,6 +8,7 @@
 
 ### Misc
 
+- Update .gitattributes ([969b581](https://github.com/CrystalNET-org/helm-tasmo-admin/commit/969b5815e5f3bc7f000dffa3ca3a2d84a8d8a077))
 - Create .gitattributes ([6fc0183](https://github.com/CrystalNET-org/helm-tasmo-admin/commit/6fc0183eef7036bb2d14d5f007dc1e7d6b7c393a))
 
 ## [3.0.11](https://github.com/CrystalNET-org/helm-tasmo-admin/releases/tag/3.0.11) - 2024-01-05
